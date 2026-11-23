@@ -1,6 +1,6 @@
-# CLEAR
+# HOOD-CCR
 
-Anonymous implementation of CLEAR for detecting and repairing backdoored Atari
+Anonymous implementation of HOOD-CCR for detecting and repairing backdoored Atari
 policies.
 
 ## Files
@@ -9,7 +9,7 @@ policies.
 | --- | --- |
 | `ppo.py` | Trains clean or backdoored PPO policies. |
 | `train_lens_sn_outer.py` | Trains critic lenses from clean observations. |
-| `repair_lens.py` | Runs the full CLEAR detection, interception, and repair pipeline. |
+| `repair_lens.py` | Runs the full HOOD-CCR detection, interception, and repair pipeline. |
 | `repair_lens_q_sweep.py` | Compares detector and repair results across calibration quantiles. |
 | `test_asr_lens.py` | Evaluates the residual detector and attack success rate. |
 | `test_lens_jing.py` | Compares poisoned and repaired policies. |
@@ -52,7 +52,7 @@ python train_lens_sn_outer.py \
   --lens-save-dir <path/to/lens_output>
 ```
 
-## Run CLEAR
+## Run HOOD-CCR
 
 Run one attack:
 
